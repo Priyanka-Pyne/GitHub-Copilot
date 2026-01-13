@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Priyanka Tours — Explore the World</title>
+	<style>
+		:root{--accent:#ff6b6b;--accent-2:#ffa08a;--card-bg:rgba(255,255,255,0.12);--glass:rgba(255,255,255,0.08)}
+		*{box-sizing:border-box}
+		body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;min-height:100vh;color:#fff;-webkit-font-smoothing:antialiased;background:linear-gradient(180deg,rgba(0,0,0,0.36),rgba(0,0,0,0.14)),url('https://source.unsplash.com/1600x900/?coconut,beach');background-size:cover;background-position:center}
+		header{width:100%;max-width:1100px;margin:24px auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+		.logo{font-weight:800;font-size:20px;letter-spacing:0.6px}
+		nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:20px;font-weight:600}
+		.container{max-width:1100px;margin:0 auto;padding:28px}
+		.hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:48px;background:linear-gradient(180deg,rgba(255,255,255,0.06),transparent);border-radius:16px}
+		.hero-inner{padding:12px}
+		.eyebrow{font-weight:700;opacity:0.95}
+		h1{font-size:clamp(28px,5vw,48px);margin:12px 0 6px}
+		p.lead{margin:0 0 18px;opacity:0.95}
+		.cta{display:inline-flex;gap:10px;align-items:center}
+		.btn{background:#fff;color:var(--accent);padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+		.secondary{background:transparent;border:1px solid rgba(255,255,255,0.12);padding:10px 16px;border-radius:10px;color:#fff;text-decoration:none}
+		.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+		.card{background:var(--card-bg);padding:18px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+		.destinations{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+		.dest{border-radius:12px;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,0.04),transparent);min-height:160px;display:flex;flex-direction:column;justify-content:flex-end;padding:14px}
+		.dest h3{margin:0;font-size:18px}
+		footer{margin:40px 0 12px;text-align:center;opacity:0.9}
+		@media(min-width:900px){.hero{grid-template-columns:1fr 420px}}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">Priyanka Tours</div>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#destinations">Destinations</a>
+			<a href="#packages">Packages</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="hero" aria-label="Tour hero">
+			<div class="hero-inner">
+				<div class="eyebrow">Explore • Discover • Experience</div>
+				<h1>Find your next adventure with Priyanka Tours</h1>
+				<p class="lead">Hand-picked trips, local guides, and unforgettable moments — tailored to you.</p>
+				<div class="cta">
+					<a class="btn" href="#packages">Get Started</a>
+					<a class="secondary" href="#contact">Talk to Us</a>
+				</div>
+
+				<div class="features" aria-hidden="false">
+					<div class="card">
+						<strong>Custom Itineraries</strong>
+						<p style="margin:8px 0 0;opacity:0.95">Build a trip that fits your pace and interests.</p>
+					</div>
+					<div class="card">
+						<strong>Small Group Tours</strong>
+						<p style="margin:8px 0 0;opacity:0.95">Curated experiences with like-minded travelers.</p>
+					</div>
+					<div class="card">
+						<strong>24/7 Support</strong>
+						<p style="margin:8px 0 0;opacity:0.95">On-trip support to keep your journey smooth.</p>
+					</div>
+				</div>
+			</div>
+
+			<aside style="padding:18px;display:flex;flex-direction:column;gap:12px">
+				<div class="card">
+					<strong>Featured Package</strong>
+					<p style="margin:8px 0 0">7-day Himalayan Escape — from $799</p>
+				</div>
+				<div class="card">
+					<strong>Flexible Dates</strong>
+					<p style="margin:8px 0 0">Book now, travel later with free date changes.</p>
+				</div>
+			</aside>
+		</section>
+
+		<section id="destinations">
+			<h2 style="margin-top:28px">Popular Destinations</h2>
+			<div class="destinations">
+				<div class="dest" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.25)),url('https://picsum.photos/seed/1/800/600');background-size:cover;background-position:center">
+					<h3>Goa Beaches</h3>
+				</div>
+				<div class="dest" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.25)),url('https://picsum.photos/seed/2/800/600');background-size:cover;background-position:center">
+					<h3>Rajasthan Palaces</h3>
+				</div>
+				<div class="dest" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.25)),url('https://picsum.photos/seed/3/800/600');background-size:cover;background-position:center">
+					<h3>Kerala Backwaters</h3>
+				</div>
+				<div class="dest" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.25)),url('https://picsum.photos/seed/4/800/600');background-size:cover;background-position:center">
+					<h3>Himalayan Trails</h3>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" style="margin-top:32px">
+			<h2>Contact Us</h2>
+			<p style="margin:8px 0 12px">Email: hello@priyankatours.example • Phone: +91 12345 67890</p>
+			<a class="btn" href="mailto:hello@priyankatours.example">Send Inquiry</a>
+		</section>
+	</main>
+
+	<footer>
+		<small>© <strong>Priyanka Tours</strong> — Crafted with care for explorers.</small>
+	</footer>
+</body>
+</html>
